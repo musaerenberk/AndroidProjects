@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:backgroundTint="#00BCD4"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number1Text"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="enter the number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/number2Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/number2Text"
+        android:layout_width="248dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="enter the number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number1Text" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="267dp"
+        android:text="Result = 0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="71dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/resultText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2Text">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="78dp"
+            android:layout_height="56dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="#FABE0B"
+            android:foregroundTint="#FFEB3B"
+            android:onClick="sum"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorHint="#FFEB3B"
+            android:textColorLink="#FFEB3B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#FFEB3B"
+            app:strokeColor="#FFEB3B"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="78dp"
+            android:layout_height="56dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="#FABE0B"
+            android:foregroundTint="#FFEB3B"
+            android:onClick="deduct"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorHint="#FFEB3B"
+            android:textColorLink="#FFEB3B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#FFEB3B"
+            app:strokeColor="#FFEB3B"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="78dp"
+            android:layout_height="56dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="#FABE0B"
+            android:foregroundTint="#FFEB3B"
+            android:onClick="multiply"
+            android:text="*"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorHint="#FFEB3B"
+            android:textColorLink="#FFEB3B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#FFEB3B"
+            app:strokeColor="#FFEB3B"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="306dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="78dp"
+            android:layout_height="56dp"
+            android:background="#FFEB3B"
+            android:backgroundTint="#FABE0B"
+            android:foregroundTint="#FFEB3B"
+            android:onClick="divide"
+            android:text="/"
+            android:textAlignment="center"
+            android:textColor="#090909"
+            android:textColorHighlight="#FFEB3B"
+            android:textColorHint="#FFEB3B"
+            android:textColorLink="#FFEB3B"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:iconTint="#FFEB3B"
+            app:strokeColor="#FFEB3B"
+            tools:layout_editor_absoluteX="300dp"
+            tools:layout_editor_absoluteY="306dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
